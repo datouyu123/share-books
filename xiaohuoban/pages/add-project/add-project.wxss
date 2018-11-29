@@ -1,0 +1,17 @@
+input{
+  height: 45px;
+  border-top:1rpx solid #D9D9D9;
+  border-bottom: 1rpx solid #D9D9D9;
+  background-color: white;
+  padding-left: 15px;
+  padding-top: 0rpx;
+  padding-bottom: 0rpx;
+}
+button{
+  margin: 30rpx;
+}
+.add-project-body{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+
+}

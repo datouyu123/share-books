@@ -1,0 +1,34 @@
+<!--pages/add-note/add-note.wxml-->
+<view class="container">
+    <view class="page-body">
+    <view class="kind-item-hd-amount">
+        <view class="kind-item-amount">金额</view>
+                <input class="kind-item-amount-input" auto-focus bindinput="bindAmountInput" type="digit" placeholder="请输入金额" maxlength="10"/>
+        <view class="kind-item-money">元</view>
+        </view>
+        <view class="kind-item-hd-type" bindtap="bindType">
+            <view class="kind-item-type">类别</view>
+            <view class="kind-item-type-input">{{placeType}}{{note.typed}}</view>
+            <image class="kind-item-forward" src="../image/forward.png" mode="aspectFit"></image>
+        </view>
+        <view class="kind-item-hd-payer" bindtap="bindUsers">
+            <view class="kind-item-payer">付款人</view>
+            <view class="kind-item-type-input">{{placePayer}}{{note.payer.text.name}}</view>
+            <image class="kind-item-forward" src="../image/forward.png" mode="aspectFit"></image>
+        </view>
+        <view class="kind-item-hd-type">
+            <view class="kind-item-type">日期</view>
+            <picker class="kind-item-type-input" mode="date" value="{{note.date}}"                        start="2015-09-01" end="{{note.date}}"                         bindchange="bindDateChange">
+                <view>
+                    {{note.date}}
+                </view>
+            </picker>
+            <image class="kind-item-forward" src="../image/forward.png" mode="aspectFit"></image>
+        </view>
+        <view class="kind-item-hd-payer">
+            <view class="kind-item-payer">备注</view>
+            <input class="kind-item-remark-input" bindinput="bindRemarkInput" type="text" placeholder="请填写备注" maxlength="20"/>
+        </view>
+        <button type="primary" bindtap="commitaNote">提交</button>
+    </view>
+</view>

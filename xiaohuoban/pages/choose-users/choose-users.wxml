@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="page-body">
+        <view class="page-section page-section-gap">
+            <block wx:for="{{users}}"  wx:key="*this">
+                <view hover="true" hover-class="view-hover" class="kind-item-hd" bindtap="backToAdd" data-key="{{item.key}}" data-name="{{item.text.name}}">
+                <view class="kind-item-left" >
+                    <image catchtap="backToAdd" data-key="{{item.key}}" data-name="{{item.text.name}}" class="kind-avatar" src="{{item.text.avatarUrl}}" background-size="cover"></image>
+                </view>
+                <view catchtap="backToAdd" data-key="{{item.key}}" data-name="{{item.text.name}}" class="kind-item-right">{{item.text.name}}
+                </view>
+                </view>
+              </block>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,77 @@
+.page-background{
+    background-color: white;
+}
+.kind-first{
+  text-align: center;
+  font-size: 26rpx;
+  padding: 25rpx 40rpx 10rpx 40rpx;
+}
+
+.kind-head{
+  padding: 15rpx 50rpx 15rpx;
+  text-align: center;
+  margin-bottom: 100rpx;
+}
+.kind-head-title{
+  display: block;
+  padding: 10rpx 40rpx 15rpx 40rpx;
+  font-size: 32rpx;
+}
+.kind-head-line{
+  padding-top:1rpx;
+  margin: 0 auto; 
+  width: 300rpx;
+  height: 1rpx;
+  background-color: #D8D8D8;
+}
+
+.kind-avatar-hd {
+  padding: 25rpx 10rpx 10rpx 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background-color: white;
+  text-align: center;
+}
+.kind-avatar-name-hd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kind-avatar {
+  width: 100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  margin: 15rpx;
+}
+
+.kind-total-hd{
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  text-align: left;
+}
+
+.kind-total-hd-amount-first{
+  color: #576b95;
+  font-size: 30rpx;
+}
+
+.kind-total-hd-amount-second{
+  color: #888888;
+  font-size: 30rpx;
+  padding-bottom: 10rpx;
+}
+
+.kind-total-hd-amount-third{
+  color: #576b95;
+  font-size: 24rpx;
+}
+
+.kind-version-line{
+  padding-top:1rpx;
+  margin: 0 auto; 
+  height: 1rpx;
+  background-color: #D8D8D8;
+}

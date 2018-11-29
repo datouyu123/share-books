@@ -1,0 +1,30 @@
+<view class="container">
+    <view class="page-body">
+        <view class="page-section page-section-gap">
+        <view class="kind-total-hd">
+        <view class="kind-total-hd-amount-first">共{{users.length}}人，人均消费{{average}}元</view>
+      </view>
+            <block wx:for="{{users}}"  wx:key="*this">
+                <view hover="true" hover-class="view-hover" class="kind-item-hd">
+                <view class="kind-item-left" >
+                    <image class="kind-avatar" src="{{item.text.avatarUrl}}" background-size="cover"></image>
+                </view>
+
+                <block wx:if="{{item.isPay}}">
+                    <view class="kind-item-right">{{item.text.name}}已支出{{item.text.payAmount}}元<view class=" kind-item-income">还需收取{{item.retain}}元</view>
+                    </view>
+                </block>
+                <block wx:if="{{!item.isPay}}">
+                    <view class="kind-item-right">{{item.text.name}}已支出{{item.text.payAmount}}元<view class=" kind-item-pay">还需支出{{item.retain}}元</view>
+                    </view>
+                </block>
+                </view>
+              </block>
+        </view>
+    </view>
+      <block wx:if="{{share=='true'}}">
+    <navigator class="page-foot" openType="redirect" url="/pages/index/index" hover-class="none">
+      <view class="kind-back-to-main">回到首页</view>
+    </navigator>
+  </block>
+</view>

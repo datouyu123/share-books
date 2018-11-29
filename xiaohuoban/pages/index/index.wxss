@@ -1,0 +1,60 @@
+/**index.wxss**/
+button{
+  margin: 30rpx;
+}
+.index-userinfo {
+  text-align: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+}
+
+.usermotto {
+  text-align: center;
+}
+
+.kind-item-hd {
+  padding:15rpx 0;
+  background-color: white;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.kind-item-left{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+}
+.kind-item-first{
+
+}
+
+.kind-item-second{
+  font-size: 28rpx;
+  color: #999999;
+}
+.kind-item-right{
+
+}
+
+.delete-button{
+  font-size: 20rpx;
+}
+.kind-back-to-main{
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.page-footer {
+  display:flex;
+  justify-content:space-around;
+}

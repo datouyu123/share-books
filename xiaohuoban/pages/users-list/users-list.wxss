@@ -1,0 +1,16 @@
+.kind-item-hd {
+  padding:15rpx;
+  background-color: white;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items:center;
+}
+
+.kind-avatar{
+  width: 100rpx;
+  height:100rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-left: 15rpx;
+  margin-right: 30rpx;
+}

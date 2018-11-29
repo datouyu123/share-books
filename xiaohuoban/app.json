@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/edit-note/edit-note",
+    "pages/add-project/add-project",
+    "pages/project-detail/project-detail",
+    "pages/add-note/add-note",
+    
+    "pages/choose-users/choose-users",
+    "pages/payment-detail/payment-detail",
+    "pages/users-list/users-list",
+    "pages/feedback/feedback"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}

@@ -1,0 +1,111 @@
+/* pages/project-detail/project-detail.wxss */
+button{
+  margin: 30rpx;
+}
+.kind-avatar-hd {
+  padding: 15rpx;
+  display: flex;
+  margin-bottom: 20rpx;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+}
+.kind-item-hd-s{
+  width:100%;
+}
+.kind-avatar {
+  width: 100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  margin: 15rpx;
+}
+.kind-avatar-s{
+  width: 100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  margin: 15rpx;
+  text-align: left;
+}
+
+.index-userinfo {
+  text-align: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.pro-time{
+  width: 100%;
+  text-align: right;
+}
+.kind-item-hd {
+  padding:15rpx 0;
+  background-color: white;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.kind-item-left{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+}
+.kind-item-first{
+  font-size: 28rpx;
+  text-align: left;
+}
+
+.kind-item-second{
+  font-size: 28rpx;
+  color: #999999;
+  text-align: left;
+}
+.kind-item-right{
+
+}
+.kind-total-hd{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+}
+
+.kind-total-hd-amount-first{
+  color: #888888;
+  font-size: 24rpx;
+}
+
+.kind-total-hd-amount-second{
+  color: #576b95;
+  font-size: 60rpx;
+}
+
+.kind-total-hd-amount-third{
+  color: #576b95;
+  font-size: 24rpx;
+}
+
+.delete-button{
+  font-size: 20rpx;
+}
+.kind-back-to-main{
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.share-hd{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rpx;
+}
+
+.share-btn {
+  font-size: 20rpx;
+}

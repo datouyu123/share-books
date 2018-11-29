@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="page-body add-project-body">
+        <input auto-focus bindinput="bindNameInput" type="text" placeholder="请输入名称(例如：泰国之旅、买菜)" maxlength="20"/>
+        <button type="primary" bindtap="addItem">增加             </button>
+    </view>
+</view>

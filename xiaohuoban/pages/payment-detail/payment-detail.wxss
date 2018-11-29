@@ -1,0 +1,40 @@
+.kind-item-hd {
+  padding:15rpx;
+  background-color: white;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items:center;
+}
+
+.kind-avatar{
+  width: 100rpx;
+  height:100rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-left: 15rpx;
+  margin-right: 30rpx;
+}
+
+.kind-total-hd{
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+
+}
+
+.kind-total-hd-amount-first{
+  color: #576b95;
+  font-size: 40rpx;
+}
+
+.kind-item-pay{
+  color:darkred;
+}
+
+.kind-item-income{
+  color:green;
+}
+.kind-back-to-main{
+  font-size: 28rpx;
+  text-align: center;
+}

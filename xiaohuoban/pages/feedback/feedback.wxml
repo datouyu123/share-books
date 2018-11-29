@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="page-body page-background">
+  <view class="kind-head">
+    <view class="kind-head-title">联系方式</view>
+    <view class="kind-head-line"></view>
+    <view class="kind-first">邮箱：willzhangxmu@gmail.com</view>
+  </view>
+    
+  <view class="kind-head">
+    <view class="kind-head-title">贡献者</view>
+    <view class="kind-head-line"></view>
+    <view class="kind-avatar-hd">
+          <block wx:for="{{users}}"  wx:key="*this">
+          <view class="kind-avatar-name-hd">
+            <image class="kind-avatar" src="{{item.avatarUrl}}" background-size="cover"></image>
+            <view class="kind-first">{{item.name}}</view>
+          </view>
+          </block>
+        </view>
+  </view>
+    <view class="kind-head">
+    <view class="kind-head-title">版本记录</view>
+    <view class="kind-head-line"></view>
+    <view class="kind-total-hd">
+    <view class="kind-total-hd-amount-first" >1.0.2</view>
+    <view class="kind-total-hd-amount-second">2018年11月28日</view>
+     <view class="kind-total-hd-amount-third">1.修复删除账本bug 2.提高最高账本数量至20 3.修改记一笔类别 4.账本详情页增加分享好友按钮 5.首页左下角增加赞赏</view>
+    </view>
+    <view class="kind-version-line"></view>
+    <view class="kind-total-hd">
+    <view class="kind-total-hd-amount-first" >1.0.1</view>
+    <view class="kind-total-hd-amount-second">2017年2月13日</view>
+     <view class="kind-total-hd-amount-third">1.登录授权优化 2.付款人bug修复 3.增加条目最后修改人</view>
+    </view>
+    <view class="kind-version-line"></view>
+    <view class="kind-total-hd">
+    <view class="kind-total-hd-amount-first" >1.0.0</view>
+    <view class="kind-total-hd-amount-second">2017年2月7日</view>
+     <view class="kind-total-hd-amount-third">正式版1.0</view>
+    </view>
+    <view class="kind-version-line"></view>
+  </view>
+  
+  </view>
+</view>

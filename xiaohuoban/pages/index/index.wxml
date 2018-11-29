@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="index-userinfo page-section_center">
+      <view class="userinfo-avatar" background-size="cover" bindtap="egg">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data class="userinfo-nickname" type="userNickName"></open-data>
+     </view>
+      <block wx:if="{{flag}}">
+        <view class="btn-area" class="addProject">
+          <button type="primary" bindtap="addPro">添加账本        </button>
+          <view class="page-section-title">我的账本</view>
+        </view>
+      </block>
+      <block wx:if="{{!flag}}">
+        <view class="usermotto">
+         <text class="user-motto">{{prompt}}</text>
+        </view>
+      </block>
+      <button wx:if="{{canIUse && autoFlag === 2}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" type="primary">授权登录</button>
+      <view class="page-section page-section-gap">
+          <block wx:for="{{pros}}"  wx:key="*this">
+            <view hover="true" hover-class="view-hover" class="kind-item-hd" bindtap="navigateToPro" data-key="{{item.key}}" data-name="{{item.text.name}}">
+              <view class="kind-item-left" >
+                <view catchtap="navigateToPro" class="kind-item-first" data-key="{{item.key}}" data-name="{{item.text.name}}">{{item.text.name}}</view>
+                <view class="kind-item-second" catchtap="navigateToPro" data-key="{{item.key}}" data-name="{{item.text.name}}">{{item.text.time}}</view>
+              </view> 
+              <view class="kind-item-right">
+                <button style="text-align:right" class="delete-button" catchtap="deleteItem" data-key="{{item.key}}">删除</button>
+              </view>
+            </view>
+          </block>
+      </view>
+      <block wx:if="{{pros_length<=0}}">
+      <view class="page-section page-section-gap">
+            <view class="page-section_center">你还没有账本，赶快添加吧！</view>
+      </view>
+     </block>
+  </view>
+  <view class="page-footer">
+    <view class="page-foot" bindtap="previewImage">
+      <view class="kind-back-to-main">赞赏一下</view>
+    </view>
+    <navigator class="page-foot" openType="navigate"                      url="/pages/feedback/feedback" hover-class="none">
+      <view class="kind-back-to-main">意见反馈</view>
+    </navigator>
+  </view>
+</view>
